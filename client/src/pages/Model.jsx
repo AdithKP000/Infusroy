@@ -111,7 +111,7 @@ const Model = () => {
 
       <div className="w-full max-w-7xl bg-white/80 backdrop-blur-lg p-8 rounded-3xl shadow-2xl border border-gray-200 relative z-10">
         <div className="text-center mb-12">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600 bg-clip-text text-transparent mb-4">
+          <h1 className="text-6xl font-bold bg-black bg-clip-text text-transparent mb-4">
             Explore 3D Models
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
