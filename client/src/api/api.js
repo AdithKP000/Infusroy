@@ -5,7 +5,7 @@ const getBaseUrl = () => {
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       return 'http://localhost:5000/';
     }
-    return 'https://your-deployed-backend.com/api';
+    return 'https://infusroy-1.onrender.com';
   }
   return 'http://localhost:5000/api';
 };
