@@ -97,7 +97,7 @@ const Model = () => {
   }
 
   const getModelUrl = (title) => {
-    return `http://localhost:5000/model/get/${title}`
+    return `https://infusroy-1.onrender.com/model/get/${title}`
   }
 
   return (
