@@ -2,6 +2,8 @@
 
 import { Upload, Eye, Zap, ArrowRight, Sparkles, Play, Star } from "lucide-react"
 import { useNavigate } from "react-router-dom"
+import Navbar from "../components/Navbar.jsx"
+
 
 export default function Component() {
   const router = useNavigate()
