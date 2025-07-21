@@ -127,7 +127,7 @@ function Navbar() {
               Home
             </a>
             <a 
-              href="/model" 
+              href="model" 
               className="text-gray-700 hover:text-blue-500 hover:bg-blue-50 text-sm xs:text-base sm:text-lg font-semibold py-2 xs:py-2.5 sm:py-3 px-2 xs:px-3 sm:px-4 rounded-lg transition-all duration-300 transform hover:translate-x-1 xs:hover:translate-x-2 touch-manipulation block w-full" 
               onClick={toggleMenu}
             >
