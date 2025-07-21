@@ -1,5 +1,7 @@
 import Components from '../components/Component';
 import api from '../api/api.js';
+import Navbar from "../components/Navbar.jsx"
+
 
 import React, { Suspense, useRef, useEffect,useState } from 'react'
 import { Canvas } from '@react-three/fiber'
@@ -101,6 +103,9 @@ const Model = () => {
   }
 
   return (
+      <>
+<Navbar/>
+      
     <div className="min-h-screen bg-white flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 font-sans relative overflow-hidden">
       {/* Animated background elements */}
       <div className="absolute inset-0 overflow-hidden">
@@ -298,6 +303,7 @@ const Model = () => {
         </div>
       )}
     </div>
+          </>
   )
 }
 
