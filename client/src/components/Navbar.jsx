@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import {useNavigate} from 'react-router-dom';
 
 function Navbar() {
+  const navigate = useNavigate();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -51,19 +53,19 @@ function Navbar() {
 
           <div className="hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex space-x-2 md:space-x-3 lg:space-x-4 xl:space-x-6 2xl:space-x-8 items-center flex-shrink-0"> 
             <a 
-              href="/" 
+             onClick={() => navigate('/')}
               className="text-gray-700 hover:text-blue-500 transition-all duration-300 ease-in-out font-medium text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl hover:scale-105 transform whitespace-nowrap px-1 lg:px-2"
             >
               Home
             </a>
             <a 
-              href="model" 
+              onClick={() => navigate('/model')}
               className="text-gray-700 hover:text-blue-500 transition-all duration-300 ease-in-out font-medium text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl hover:scale-105 transform whitespace-nowrap px-1 lg:px-2"
             >
               Models
             </a>
             <a 
-              href="upload" 
+              onClick={() => navigate('/upload')}
               className="text-gray-700 hover:text-blue-500 transition-all duration-300 ease-in-out font-medium text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-xl hover:scale-105 transform whitespace-nowrap px-1 lg:px-2"
             >
               Upload
@@ -120,23 +122,22 @@ function Navbar() {
         <div className="px-2 xs:px-3 sm:px-4 py-1 xs:py-2 sm:py-3">
           <div className="flex flex-col space-y-0.5 xs:space-y-1">
             <a 
-              href="/" 
               className="text-gray-700 hover:text-blue-500 hover:bg-blue-50 text-sm xs:text-base sm:text-lg font-semibold py-2 xs:py-2.5 sm:py-3 px-2 xs:px-3 sm:px-4 rounded-lg transition-all duration-300 transform hover:translate-x-1 xs:hover:translate-x-2 touch-manipulation block w-full" 
-              onClick={toggleMenu}
+              onClick={()=>{toggleMenu,navigate('/')}}
             >
               Home
             </a>
             <a 
               href="model" 
               className="text-gray-700 hover:text-blue-500 hover:bg-blue-50 text-sm xs:text-base sm:text-lg font-semibold py-2 xs:py-2.5 sm:py-3 px-2 xs:px-3 sm:px-4 rounded-lg transition-all duration-300 transform hover:translate-x-1 xs:hover:translate-x-2 touch-manipulation block w-full" 
-              onClick={toggleMenu}
+              onClick={()=>{toggleMenu,navigate('/model')}}
             >
               Models
             </a>
             <a 
               href="upload" 
               className="text-gray-700 hover:text-blue-500 hover:bg-blue-50 text-sm xs:text-base sm:text-lg font-semibold py-2 xs:py-2.5 sm:py-3 px-2 xs:px-3 sm:px-4 rounded-lg transition-all duration-300 transform hover:translate-x-1 xs:hover:translate-x-2 touch-manipulation block w-full" 
-              onClick={toggleMenu}
+              onClick={()=>{toggleMenu,navigate('/upload')}}
             >
               Upload
             </a>
