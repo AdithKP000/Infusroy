@@ -7,6 +7,10 @@ export default function Component() {
   const router = useNavigate()
 
   return (
+    <>
+            <Navbar/>
+
+
     <section className="w-full min-h-screen py-12 md:py-16 lg:py-20 xl:py-24 bg-white relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-gradient-to-br from-blue-100 to-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-40 animate-pulse"></div>
@@ -130,5 +134,6 @@ export default function Component() {
        
       </div>
     </section>
+      </>
   )
 }
