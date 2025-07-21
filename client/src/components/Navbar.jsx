@@ -39,7 +39,7 @@ function Navbar() {
   }, [isOpen]);
 
   return (
-    <nav className="bg-slate-100 text-white shadow-xl rounded-b-xl relative w-full min-w-0"> 
+    <nav className="hidden md:block  bg-slate-100 text-white shadow-xl rounded-b-xl relative w-full min-w-0"> 
       <div className="w-full max-w-none px-2 xs:px-3 sm:px-4 md:px-6 lg:px-8 xl:px-12 2xl:px-16 py-2 xs:py-4 sm:py-5">
         <div className="flex justify-between items-center w-full min-w-0">
           {/* Logo */}
