@@ -124,7 +124,7 @@ const Upload = () => {
     <div className="min-h-screen bg-gray-100 flex flex-col items-center py-12 px-4 sm:px-6 lg:px-8 font-sans m-2">
       <div className="w-full max-w-6xl flex flex-col lg:flex-row lg:space-x-8 space-y-8 lg:space-y-0">
         <div className="w-full lg:w-1/2 bg-white p-8 rounded-xl shadow-lg"> 
-          <h1 className="text-4xl font-extrabold text-gray-900 text-center">
+          <h1 className="text-6xl font-bold text-gray-900 text-center">
             Upload Your 3D Model
           </h1>
 
